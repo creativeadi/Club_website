@@ -10,6 +10,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+
+
     const handleScroll = () => {
       const offset = window.scrollY;
       if (offset > 150) {
@@ -43,8 +45,8 @@ const Navbar = () => {
             <li
             key={link.id}
             className={`${
-              active===link.title ? "text-yellow":"text-secondary"
-            } hover:text-yellow text-[18px] font-medium cursor-pointer hover:underline-yellow`}
+              active===link.title ? "navbar-item":"navbar-link"
+            } hover:text-white  font-medium cursor-pointer`}
             onClick={()=> setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -60,7 +62,7 @@ const Navbar = () => {
               <li
               key={link.id}
               className={`${
-                active===link.title ? "text-white":"text-secondary"
+                active===link.title ? "navbar-item":"navbar-link"
               } font-poppins font-medium cursor-pointer text-[16px]`}
 
               onClick={()=> {

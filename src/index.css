@@ -21,10 +21,6 @@
   color-scheme: dark;
 }
 
-.hover\:underline-yellow:hover {
-  text-decoration: underline;
-  text-decoration-color: #fcbe5a;
-}
 
 .hash-span {
   margin-top: -100px;
@@ -32,12 +28,59 @@
   display: block;
 }
 
-.timeline-date-image {
-  width: fit-content;
-  height: fit-content;
-  border-radius: 10%;
-  margin-top: auto;
-  opacity: 1;
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-item {
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #7b46eb;
+  color: #180e2f;
+}
+
+
+.navbar-link {
+  text-decoration: none;
+  color: #aaa6c3;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px 10px;
+  align-items: center;
+  /* Add this line to make sure the container takes the full width of its parent */
+  width: 100%;
+  
+}
+
+.navbar-link:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(191, 97, 255, 0.7), 0 0 30px rgba(0, 206, 168, 0.7);
+}
+
+.send-link{
+  text-decoration: none;
+  color: #aaa6c3;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.send-link:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(191, 97, 255, 0.7), 0 0 30px rgba(0, 206, 168, 0.7);
 }
 
 .black-gradient {

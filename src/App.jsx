@@ -1,5 +1,5 @@
 import {BrowserRouter} from 'react-router-dom';
-import {About, Feedbacks,Works,Hero,Navbar, Events} from './components';
+import {About, Feedbacks,Works,Hero,Navbar, Events, StarsCanvas} from './components';
 import { useState,useEffect } from 'react';
 
 
@@ -25,9 +25,12 @@ const App=() => {
         <About />
         <Events />
       </div>
+      <div className='relative z-0'>
+        <Works/>
+        <Feedbacks/>
+        <StarsCanvas/>
+      </div>
       
-      <Works/>
-      <Feedbacks/>
     </div>
     </BrowserRouter>
   )
