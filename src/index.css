@@ -1,22 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'rollbox';
+  src: url('./assets/fonts/Rollbox.ttf');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+.hover\:underline-yellow:hover {
+  text-decoration: underline;
+  text-decoration-color: #fcbe5a;
 }
 
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+
+.timeline-date-image {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10%;
+  margin-top: auto;
+  opacity: 1;
 }
 
 .black-gradient {
@@ -96,6 +117,13 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-shadow{
+  text-shadow: 0 0 5px #fff, /* First shadow layer */
+  0 0 10px #fff, /* Second shadow layer */
+  0 0 15px #fff, /* Third shadow layer */ 
+  0 0 30px #ff00ff; /* Deeper purple glow */
 }
 
 .pink-text-gradient {

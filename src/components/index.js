@@ -5,6 +5,7 @@ import About from './About';
 import Tech from './Tech';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
+import Events from './Events';
 
 export {
   Hero,
@@ -12,6 +13,7 @@ export {
   About,
   Tech,
   Works,
+  Events,
   Feedbacks,
   EarthCanvas, 
   BallCanvas, 
