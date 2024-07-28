@@ -109,7 +109,7 @@ const Feedbacks = () => {
         <div className='button-container'>
           <button 
             type='submit' 
-            className='bg-tertiary send-link py-4 px-8 outline-none w-fit text-white border-[1px] font-bold shadow-md
+            className='bg-tertiary send-link py-4 px-8 outline-none w-fit text-white border-[2px] font-bold shadow-md
              shadow-primary rounded-xl'>
             {loading ? 'Sending...' : 'Send'}
           </button>
